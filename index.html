@@ -1,47 +1,48 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <title>sign up form</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <div id="splash">
-            <img src="squirrel.jpg" alt="A majestic brown squirrel eating his nut on a tree branch.">
-            <div id="title">
-                <h1>SQUIRRELAND</h1>
-            </div>
-            <p>Photo by...</p>
+<head>
+    <title>sign up form</title>
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="splash">
+        <div id="title">
+            <span id="logo">c</span>
+            <h1>SQUIRRELAND</h1>
         </div>
-        <div id="sign-up-area">
-            <p id="page-info">We have the latest and greatest news on squirrels happening right now! Sign up now to receive them.</p>
-            <form action="">
-                <div id="user-form">
-                    <legend>Give us your info</legend>
-                    <div> 
-                        <label for="name">First Name</label>
-                        <input type="text" id="name" name="user_name">
-                        <label for="last_name">Last Name</label>
-                        <input type="text" id="last_name" name="user_last_name">
+        <p id="credit">Photo by Pepe Morelos</p>
+    </div>
+    <div id="sign-up-area">
+        <p id="page-info">We have them latest and greatest news on our furry frens happening right now! Sign up now to receive them.</p>
+        <form action="">
+            <div id="user-form">
+                <legend>Give us your info</legend>
+                <div id="input-info">
+                    <div id="left-col">
+                        <label for="name" class="left">First Name</label>
+                        <input type="text" id="name" name="user_name" class="left">
+                        <label for="mail" class="left">e-mail</label>
+                        <input type="email" id="mail" name="user_email" class="left">
+                        <label for="pass" class="left">Password</label>
+                        <input type="password" name="user_password" id="pass" class="left">
                     </div>
-                    <div>
-                        <label for="mail">e-mail</label>
-                        <input type="email" id="mail" name="user_email">
-                        <label for="phone">Phone number</label>
-                        <input type="tel" name="user_phone" id="phone">
-                    </div>
-                    <div>
-                        <label for="pass">Password</label>
-                        <input type="password" name="user_password" id="pass">
-                        <label for="password_confirm">Confirm password</label>
-                        <input type="password" name="password_confirm" id="pass_conf">            
+                    <div id="right-col"> 
+                        <label for="last_name">Last Name</label class="right">
+                        <input type="text" id="last_name" name="user_last_name" class="right">
+                        <label for="phone" class="right">Phone number</label>
+                        <input type="tel" name="user_phone" id="phone" class="right">
+                        <label for="password_confirm" class="right">Confirm password</label>
+                        <input type="password" name="password_confirm" id="pass_conf" class="right">            
                     </div>
                 </div>
-            </form>
-            <div id="log-in">
-                <button>Subscribe</button>
-                <p>Already subscribed? <a href="">Log in</a></p>
             </div>
+        </form>
+        <div id="submit">
+            <button type="submit">Subscribe</button>
+            <p>Already subscribed? <a href="">Log in</a></p>
         </div>
-    </body>
+    </div>
+</body>
 </html>

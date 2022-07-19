@@ -1,54 +1,123 @@
 body {
-    height: 100vh;
     display: flex;
     padding: 0px;
     margin: 0px;
 }
 
 #splash {
-    height: 100%;
-    position: relative;
-}
-
-img {
-    width: auto;
-    height: 100%;
+    height: 100vh;
+    width: 35vw;
+    background-image: url('squirrel.jpg');
+    background-repeat: no-repeat;
+    background-size: auto 100%;
     position: relative;
 }
 
 #title {
-    width: 663px;
-    height: 200px;
+    width: auto;
+    height: 20%;
     background-color: rgba(200, 200, 200, 0.5);
-    position: absolute;
-    top: 10%;
+    position: relative;
+    top: 10vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-h1 {
-    color: orange;
+#title #logo {
+    font: 128px furry-friends;
+}
+
+#title h1 {
+    font: 72px alien-fur;
+    color: darkorange;
+}
+
+#splash #credit {
+    position: absolute;
+    bottom: 10px;
+    right: 30px;
+    color: burlywood;
 }
 
 #sign-up-area {
-    padding: 5%;
-    padding-top: 10%;
-    padding-bottom: 10%;
+    box-sizing: border-box;
+    background-color: antiquewhite;
+    width: 70vw;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-}
-
-#user-form {
-    background-color: rgba(222,184,135, 0.5);
-    width: auto;
-    height: auto;
-    padding: 60px;
+    justify-content: center;
+    gap: 80px;
 }
 
 #page-info {
+    width: 85%;
     color: brown;
     font-size: 24px;
     font-weight: bold;
+    margin-left: 80px;
+    line-height: 2em;
+    height: 8vh;
+}
+
+#user-form {
+    box-sizing: border-box;
+    background-color: rgba(222,184,135, 0.5);
+    box-shadow: 0px 5px 5px rgba(180,140,80, 0.5); 
+    width: auto;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5vw;
+    gap: 20px;
+}
+
+#user-form legend {
+    color: orangered;
+    font-size: 32px;
+}
+
+#input-info {
+    display: flex;
+    gap: 6vw;
+}
+
+input[type='text'], input[type='email'], input[type='password'], input[type='tel']{
+    height: 2em;
+    width: 20em;
+    background-color: blanchedalmond;
+    border-color: lightcoral;
+    border-radius: 5px;
+}
+
+#submit {
+    padding-left: 5vw;
+}
+
+#submit button {
+    background-color: brown;
+    color: blanchedalmond;
+    font-size: 24px;
+    border-radius: 10px;
+    padding: 0.5em 1em 0.5em 1em;
+    border-color: darkred;
+}
+
+#submit button:hover {
+    background-color: darkorange;
+}
+
+#submit button:active {
+    background-color: darkred;
+}
+
+input, label {
+    display: block;
+}
+
+#left-col, #right-col {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
 }

@@ -1,0 +1,13 @@
+@font-face {
+    font-family: alien-fur;
+    src: url('fonts/AlienFur.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: furry-friends;
+    src: url('fonts/ww_furry_friends/WWFurryFriends.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
