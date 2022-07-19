@@ -6,6 +6,42 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <h1>SIGN UP TO OUR NEWSLETTER!!!</h1>
+        <div id="splash">
+            <img src="squirrel.jpg" alt="A majestic brown squirrel eating his nut on a tree branch.">
+            <div id="title">
+                <h1>SQUIRRELAND</h1>
+            </div>
+            <p>Photo by...</p>
+        </div>
+        <div id="sign-up-area">
+            <p id="page-info">We have the latest and greatest news on squirrels happening right now! Sign up now to receive them.</p>
+            <form action="">
+                <div id="user-form">
+                    <legend>Give us your info</legend>
+                    <div> 
+                        <label for="name">First Name</label>
+                        <input type="text" id="name" name="user_name">
+                        <label for="last_name">Last Name</label>
+                        <input type="text" id="last_name" name="user_last_name">
+                    </div>
+                    <div>
+                        <label for="mail">e-mail</label>
+                        <input type="email" id="mail" name="user_email">
+                        <label for="phone">Phone number</label>
+                        <input type="tel" name="user_phone" id="phone">
+                    </div>
+                    <div>
+                        <label for="pass">Password</label>
+                        <input type="password" name="user_password" id="pass">
+                        <label for="password_confirm">Confirm password</label>
+                        <input type="password" name="password_confirm" id="pass_conf">            
+                    </div>
+                </div>
+            </form>
+            <div id="log-in">
+                <button>Subscribe</button>
+                <p>Already subscribed? <a href="">Log in</a></p>
+            </div>
+        </div>
     </body>
 </html>
