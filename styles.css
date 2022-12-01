@@ -25,12 +25,12 @@ body {
 }
 
 #title #logo {
-    font: 98px furry-friends;
+    font: 60px furry-friends;
 }
 
 #title h1 {
-    font: 72px alien-fur;
-    color: darkorange;
+    font: 60px alien-fur;
+    color: black;
 }
 
 #splash #credit {
